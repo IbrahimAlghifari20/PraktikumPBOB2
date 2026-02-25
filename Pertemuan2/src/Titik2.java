@@ -77,7 +77,7 @@ public class Titik2 {
         return temp;
     }
 
-        Titik2 getrefleksiY(){
+    Titik2 getrefleksiY(){
         Titik2 temp = new Titik2(this.absis * -1, this.ordinat); 
         return temp;
     }
