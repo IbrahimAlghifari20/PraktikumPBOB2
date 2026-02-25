@@ -37,6 +37,29 @@ public class Titik2 {
     void printTitik(){
         System.out.println("Titik (" + absis + "," + ordinat + ")");
     }
+
+    double getkuadran(){
+        if (absis > 0 && ordinat >0) {
+            return 1;
+        }else{
+            if (absis > 0 && ordinat < 0) {
+                return 4;
+            }else{
+                if (absis < 0 && ordinat < 0) {
+                  return 3;  
+                }else{
+                    if (absis < 0 && ordinat > 0) {
+                        return 2;
+                    }else
+                        return 0;
+                }
+            }
+        }
+    }
+
+    // double getjarakpusat(){
+
+    // }
 }
 
 
