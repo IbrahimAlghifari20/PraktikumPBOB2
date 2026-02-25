@@ -1,7 +1,7 @@
 /*Nama File: Titik.Java
  *Deskripsi: berisi atribut dan method class Titik
  *Pembuat: Muhammad Ibrahim Alghifari
- *Tanggal: 19 Februari 2026 */
+ *Tanggal: 25 Februari 2026 */
 
 public class Titik2 {
 
