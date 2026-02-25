@@ -14,6 +14,11 @@ public class Titik2 {
         absis = 0;
         ordinat = 0;
     }
+
+    Titik2(double x, double y){
+        this.absis = x;
+        this.ordinat = y;
+    }
     double getAbsis() {
         return absis;
     }
@@ -41,26 +46,46 @@ public class Titik2 {
     double getkuadran(){
         if (absis > 0 && ordinat >0) {
             return 1;
-        }else{
-            if (absis > 0 && ordinat < 0) {
+        }else if (absis > 0 && ordinat < 0) {
                 return 4;
-            }else{
-                if (absis < 0 && ordinat < 0) {
+            }else if (absis < 0 && ordinat < 0) {
                   return 3;  
-                }else{
-                    if (absis < 0 && ordinat > 0) {
+                }else if (absis < 0 && ordinat > 0) {
                         return 2;
                     }else
                         return 0;
                 }
-            }
-        }
+
+    double getjarakpusat(){
+        return Math.sqrt(Math.pow(absis, 2) + Math.pow(ordinat, 2));
     }
 
-    // double getjarakpusat(){
+    double getjarak(Titik2 T){
+        return Math.sqrt(Math.pow(this.absis - T.getAbsis(), 2) + Math.pow(this.ordinat - T.getordinat(), 2));
+    }
+    
+    void refleksiX(){
+        ordinat = ordinat * -1;
+    }
 
-    // }
-}
+    void refleksiY(){
+        absis = absis * -1;
+    }
+
+    Titik2 getrefleksiX(){
+        Titik2 temp = new Titik2(this.absis, this.ordinat * -1); 
+        return temp;
+    }
+
+        Titik2 getrefleksiY(){
+        Titik2 temp = new Titik2(this.absis * -1, this.ordinat); 
+        return temp;
+    }
+    }
+        
+    
+
+
 
 
 
