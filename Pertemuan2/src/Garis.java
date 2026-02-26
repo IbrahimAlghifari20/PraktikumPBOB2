@@ -1,3 +1,8 @@
+/*Nama File: Garis.Java
+ *Deskripsi: berisi atribut dan method class Garis
+ *Pembuat: Muhammad Ibrahim Alghifari
+ *Tanggal: 26 Februari 2026 */
+
 import java.lang.Math;
 public class Garis {
     /* ATRIBUT */

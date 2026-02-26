@@ -1,3 +1,7 @@
+/*Nama File: Garis.Java
+ *Deskripsi: berisi atribut dan method class Garis
+ *Pembuat: Muhammad Ibrahim Alghifari
+ *Tanggal: 26 Februari 2026 */
 public class MGaris {
     public static void main(String[] args) {
         Titik2 T1 = new Titik2();
