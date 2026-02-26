@@ -52,12 +52,28 @@ public class Garis {
 
     void Tengah(Titik2 mid){
         mid = new Titik2();
-        mid.absis = (akhir.getAbsis() + awal.getAbsis())/2;
-        mid.ordinat = (akhir.getordinat() + awal.getordinat())/2;
+        mid.setAbsis((akhir.getAbsis() + awal.getAbsis())/2);
+        mid.setOrdinat((akhir.getordinat() + awal.getordinat())/2);
     }
 
     void printGaris(){
 
         System.out.println("(" + awal.getAbsis() + "," + awal.getkuadran() + ")" + "(" + akhir.getAbsis() + "," + akhir.getkuadran() +")");
     }
+
+    boolean isSejajar(Garis G){
+        return this.gradien() == G.gradien();
+    }
+
+    boolean isTegakLurus(Garis G){
+        return this.gradien() * G.gradien() == -1;
+    }
+
+String PersamaanGaris() {
+    double m = gradien();
+    double c = awal.getordinat() - (m * awal.getAbsis());
+    return "Persamaan Garis = " + m + "x + " + c;   
+    
+}
+
 }
